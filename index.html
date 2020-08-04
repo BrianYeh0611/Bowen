@@ -1,387 +1,113 @@
 <!DOCTYPE html>
 <html>
-<title>BOWEN DESIGN</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", Oswald;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+  <head>
+    <meta charset="utf-8">
+    <title>Bowen's Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  
+  </head>
+  
+ 
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  <body class="body">
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: ('/其他/Marble b2.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-
-
-</style>
-<body>
-
-<!-- Navbar (sit on top) -->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-  transition: background-color .5s;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-</head>
-<body>
-
-
-<div class="w3-top sidenav" id="mySidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#about">ABOUT</a>
-  <a href="#">PORTFOLIO</a>
-  <a href="#">CONTACT</a>
-</div>
-
-<div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Content</span>
-</div>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
-}
-</script>
-
-
-
-</body>
-</html>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BOWEN'S<span class="w3-hide-small"></span> DESIGN</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">序 PROLOGUE</h3>
-  <p class="w3-center"><em></em></p>
-  <p>  這個建案的來源為"2020危老住宅重建創新學生競圖"，而引導我思考格局規劃的老師就是我爸爸，他是一名資深的室內設計師，也是啟發我對室內設計濃厚興趣的人。從開始打草圖到建模完成前後大概花上一個多月，途中我還順便找了許多資料想了解一下危老建築在法律上的意義，好讓我在設計理念中擁有清晰的想法。
-
-        此次建案的地基坐落在大同區，原建築是老舊連棟透天厝中間兩戶。原屋主根據台北市危老條 例進行重建後，設計為一棟七層樓電梯公寓，規劃為一層一戶格局之住宅。 此基地屬於住四用地，南側臨 6M 街道，街道對面有國小校園圍牆及人行道樹，景觀與採光佳；基地北側與後棟住宅隔有防火巷，可採光。重建設計規劃案於新建築物南、北兩側均設置陽台。基地東、西兩側鄰房。重建設計規劃案將新建築物的東、西兩側牆均自地界線各退縮 1M，並 於西側外牆中段偏後部分再退縮設置陽台，有利採光。</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="w3-margin-right"></i>架構圖Structure</b></p><br>
-      <img src="/其他/理念圖.jpg" class="w3-round w3-image" width="500" height="333">
+    <div id="main">
     </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-    <p>根據我蒐集來的資料顯示，能符合危老條例重建資格的建築大概要先符合下列幾個條件:<br>
-      1:位於都市計畫地區內之建築物<br>
-      2: 非歷史建築，也就是不具文化歷史紀念藝術價值<br>
-      3:危險或老舊的合法建築<br>
-      P.S:如果是違章建築則不適用危老條例!<br><br>
+    <nav class="header">
+        <div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="about.html" style="text-decoration: none;">2020危老住宅重建創新設計學生競圖作品</a>
+                <a href="villa.html" style="text-decoration: none;">Villa 設計</a>
+                <a href="#" style="text-decoration: none;">關於我</a>
+            </div>
 
-      而建築對於[危險]，[老舊]的定義，大致上為:<br><br>
-      [危險]:經建築主管機關依法通知期限拆除、強制拆除的海砂屋、震損屋，結構性能評估未達最低等級的建築。<br><br>
-      [老舊]:屋齡超過30年，耐震程度未達標準的建築。<br><br>
-      而被認定為危老建築重建合格者，就可以透過建築執照申請程序開始著手進行施工。<br>
-    </p>
-    </div>
-  </div>
+            <span class="BD" onclick="openNav()">&#9776</span>
+            <h1 class="BD1">BOW&#9776N'S D&#9776SIGN</h1>
+        </div>
+    </nav>
 
-</div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">1</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">SketchUp Pro</span><br>
-    Aplication Used
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">1Month+</span><br>
-    Working Days
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">None</span><br>
-    Vray Render Usage
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-black w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64 w3-center" id="portfolio">
-  <img src="/其他/編號平面圖.jpg" style="width:100%">
-  <h3 class="w3-center">平面配置圖（含家具）</h3>
-  <p class="w3-center"><em>2020危老住宅重建創新設計學生競圖作品</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <h1>1</h1>
-      <img src="/設計圖/客廳.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>客廳</h1><h2>Living Room</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>2</h2>
-      <img src="/設計圖/主臥室.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>主臥室</h1><h2>Master Bedroom</h2>">
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/設計圖/小孩房.jpg" alt="First slide" style="height:500px;width:200px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>2020危老住宅重建創新設計學生競圖作品</h5>
+                        <p>小孩房</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/設計圖/小孩陽台.jpg" alt="Second slide" style="height:500px;width:200px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>2020危老住宅重建創新設計學生競圖作品</h5>
+                        <p>小孩房陽台</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/設計圖/工作陽台.jpg" alt="Third slide" style="height:500px;width:200px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>2020危老住宅重建創新設計學生競圖作品</h5>
+                        <p>工作陽台</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 
-    <div class="w3-col m3">
-      <h1>3</h1>
-      <img src="/設計圖/更衣室.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>更衣室</h1><h2>Changing Room</h2>">
-    </div>
 
-   <div class="w3-col m3">
-      <h1>4</h1>
-      <img src="/設計圖/主臥衛浴.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>主臥衛浴</h1><h2>Master Bedroom's Shower</h2>">
-    </div>
 
-    <div class="w3-col m3">
-      <h1>5</h1>
-      <img src="/設計圖/餐廳.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>餐廳</h1><h2>Dining Room</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>6</h1>
-      <img src="/設計圖/客廳陽台.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>客廳陽台</h1><h2>Living Room's Balcony</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>7</h1>
-      <img src="/設計圖/廚房.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>廚房</h1><h2>Kitchen</h2>"">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>8</h1>
-      <img src="/設計圖/玄關.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>玄關</h1><h2>Entrance</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>9</h1>
-      <img src="/設計圖/工作陽台.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>工作陽台</h1><h2>Working Balcony</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>10</h1>
-      <img src="/設計圖/公浴.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>公用衛浴</h1><h2>Public Shower</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>11</h1>
-      <img src="/設計圖/走廊.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>走廊</h1><h2>Corridor</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>12</h1>
-      <img src="/設計圖/孝親房.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>孝親房</h1><h2>Parents Room</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>13</h1>
-      <img src="/設計圖/儲藏室.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>儲藏室</h1><h2>Storage Room</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>14</h1>
-      <img src="/設計圖/小孩房.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>小孩房</h1><h2>Kid's Room</h2>">
-    </div>
-
-    <div class="w3-col m3">
-      <h1>15</h1>
-      <img src="/設計圖/小孩陽台.jpg" width="200" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="<h1>小孩房陽台</h1><h2>Kid's Room Balcony</h2>">
-    </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">聯絡方式</h3>
-  <p class="w3-center"><em>歡迎聯繫我 ！</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/其他/高鈺.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom" align="left">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Taipei, Taiwan<br><br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 0912726990<br><br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: bowenkao91@mail.com<br>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-large">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"
-    onclick="location.href='https://www.facebook.com/kao.bowen.7'"></i>
-
-    <i class="fa fa-instagram w3-hover-opacity" onclick="location.href='https://www.instagram.com/__bo_kaoo__/'"></i>
-
-    <i class="fa fa-pinterest-p w3-hover-opacity"
-    onclick="location.href='https://www.pinterest.com/bowenkao91/boards/'"></i>
-
-  </div>
-  <p>Powered by <a href="https://www.instagram.com/brian_yeh_kc/" title="Brian y. Web" target="_blank" class="w3-hover-text-green">Brian Yeh</a></p>
-</footer>
-
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-</body>
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script src=http://www.ithao123.cn/"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+    <script src=http://www.ithao123.cn/"https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js">
+    <![endif]-->
+  </body>
 </html>
