@@ -69,9 +69,3 @@ body,h1,h2,h3,h4,h5,h6 {
     background-color:rgba(41, 39, 39, 0.9);
 }
 
-@media screen and (min-width: 960px) {
-    .body{
-
-    }
-}
-
